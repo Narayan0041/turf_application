@@ -49,7 +49,7 @@ export default function Recommended() {
                     dataDetail.map((data) => {
                         return (
                             <SwiperSlide style={handleStyle}>
-                                <RecommendedCard image={data.image} />
+                                <RecommendedCard image={data.image} place={data.place} description={data.description}/>
                             </SwiperSlide>
                         )
                     })

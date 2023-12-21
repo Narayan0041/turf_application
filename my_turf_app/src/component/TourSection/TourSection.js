@@ -5,7 +5,8 @@ export default function TourSection() {
   return (
     <div>
        <h2 className="TourTextSection">Responsive Slider</h2>
-       <div>
+        <SliderInfo/>
+       <div style={{marginTop:"1rem"}}>
         <SliderInfo/>
        </div>
     </div>

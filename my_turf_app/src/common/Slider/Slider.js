@@ -16,10 +16,11 @@ import { heroSectionSlider } from './SliderImageDataList';
 
 export default function Slider() {
   let handleStyle={
-    borderRadius: "1rem",
+    // borderRadius: "1rem",
     width: "95%",
-    height:"20vh"
-    
+    height:"31vh",
+    paddingBottom:"5rem",
+    marginBottom:"25rem",
   }
   let image = heroSectionSlider.HeroSliderImage.Images;
   return (
@@ -42,7 +43,7 @@ export default function Slider() {
            image.map((image) => {
             return (
               <SwiperSlide style={handleStyle}>
-                <SliderImage image={image.image} />
+                <SliderImage image={image.image} firstWord={image.firstWord} secondWord={image.LastWord} />
               </SwiperSlide>
             )
           })
