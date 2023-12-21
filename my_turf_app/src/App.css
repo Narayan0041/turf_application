@@ -1,38 +1,262 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200;300;400;500;600;700;800&display=swap');
+:root{
+  --body-backgroundColor:rgb(0, 0, 0);
+  --backgroundColor-gray:rgb(50, 50, 50);
+  --primay-color:#8072e6;
+  --font-color:white;
+  --blue-backgroundColor:#ccc5fe;
+  --font-color-secondary:rgb(197, 196, 196);
+  --gray-light:rgb(83, 83, 83);
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: none;
+  outline: none;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  transition: all .2s linear;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+html{
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  scroll-padding-top: 7px;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+body{
+  overflow-x: hidden;
+  background-color: var(--body-backgroundColor);
+}
+/* -------------------------------------------------------ProfileDetailSection-------------------------------------------------- */
+.ProfileDetailSection{
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
+  padding: 1rem 1.5rem;
+}
+.UserDetailSection h2{
+  letter-spacing: .05rem;
+  font-size: 1.5rem;
+  color:var(--font-color);
+}
+.UserDetailSection h2 span{
+  padding-left: .2rem;
+font-size: .9em;
+}
+.UserDetailSection p{
+  margin-top: .2rem;
+  word-spacing: .3rem;
+  font-size: .75rem;
+  color: var(--font-color-secondary);
+}
+.UserProfileSection img{
+  border-radius: 50%;
+}
+
+/* ----------------------------------------------------------NavbarContainer-------------------------------------------- */
+.NavbarContainer{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: .5rem 1rem;
+  color: var(--font-color);
+  width: 90%;
+  margin-left: 5%;
+  position: fixed;
+  bottom: 1rem;
+  left: 0;
+  border-radius: 2rem;
+  z-index: 1000;
+  background-color: var(--backgroundColor-gray);
+}
+
+
+/* ---------------------------------------------------------NavbarPaticularSection--------------------------------------------- */
+.NavbarPaticularSection{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.NavbarContainer:nth-child(2){
+  background-color: var(--primay-color);
+  height: 4rem;
+  width: 4rem;
+  border-radius: 50%;
+}
+.NavbarPaticularSection .Text{
+  margin-top: .1rem;
+  font-size: .75rem;
+}
+.navsection{
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  flex-direction: column;
+  padding: .1rem;
 }
 
-.App-link {
-  color: #61dafb;
+.Different {
+  color: var(--font-color);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* -------------------------------------------------SecondSliderFeacture-------------------------------------------- */
+.InfoSliderCard img{
+  border-radius:.5rem
+}
+
+/* -----------------------------------------------TourSection---------------------------------------- */
+.TourTextSection{
+  color: var(--font-color);
+  margin-top: 1rem;
+  margin-bottom: .8rem;
+  margin-left: 1rem;
+}
+
+/* -----------------------------------------------Button--------------------------------------------- */
+.Button button{
+  background-color: var(--body-backgroundColor);
+  color: var(--font-color);
+  border-radius: 1rem;
+  font-size: 1.3rem;
+    padding: 1rem .5rem;
+}
+
+/* ---------------------------------------------checkOutContainer------------------------------------------------ */
+.checkOutContainer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 98%;
+  margin-left: 1.5%;
+  border-radius: 1rem;
+  flex-direction: column;
+  color: var(--font-color);
+  padding: 2rem .5rem;
+  margin-top: 2rem;
+  text-align: center;
+  background-color: var(--gray-light);
+}
+.checkOutContainer h3{
+  padding-bottom: 1rem;
+}
+
+
+/* -------------------------------------------------------------ShowCaseSection-------------------------------------------- */
+.plateFormHeaderSection{
+  margin-top: 2rem;
+  border-top-right-radius: 1.5rem;
+  border-top-left-radius: 1.5rem;
+  background-color: var(--gray-light);
+  padding-bottom: 1rem;
+}
+.plateFormHeaderContainer {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  color: var(--font-color);
+  flex-direction: column;
+}
+
+.plateFormHeaderSection .UpperPart {
+  display: flex;
+}
+
+.plateFormHeaderSection .UpperPart .firstOne {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--black-color);
+  margin-left: 1.5rem;
+  padding-top: 2rem;
+}
+
+.plateFormHeaderSection .UpperPart .firstOne span {
+  display: block;
+  margin-left: 2.6rem;
+}
+
+.plateFormHeaderSection .UpperPart .reportText {
+  margin-left: 1rem;
+  padding-top: 2rem;
+  font-weight: 500;
+  font-size: 3rem;
+}
+
+.plateFormHeaderSection .lowerPart {
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: row-reverse;
+  /* margin-top: 1rem; */
+}
+
+.plateFormHeaderSection .lowerPart p:first-child {
+  font-size: 2rem;
+  font-weight: 500;
+  margin-left: 48%;
+}
+
+.plateFormHeaderSection .lowerPart p:nth-child(2) {
+  display: flex;
+  padding-left: 7%;
+  font-size: 1.1rem;
+  padding-right: 1rem;
+  margin-top: 1rem;
+  flex-basis: 462px;
+  color: var(--gray-color);
+}
+
+/* ---------------------------------------------------------RecommendedComponent----------------------------------- */
+.RecommendedComponent{
+  margin-top: 1.5rem;
+  color: var(--font-color);
+}
+.RecommendedComponent h2{
+  margin-bottom: .8rem;
+  margin-left: 1rem;
+}
+
+/* ---------------------------------------------------------QuerySection-------------------------------------------------- */
+.QuerySection{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 3rem;
+  color: var(--font-color);
+  margin-bottom: 8rem;
+}
+.QuerySection p{
+  margin-top: .5rem;
+  font-size: 1rem;
+  text-align: center;
+  color: var(--gray-color);
+}
+.QuerySection textarea{
+  margin-top: 1.5rem;
+  background-color: transparent;
+  border: 1px solid var(--primay-color);
+  border-radius: .5rem;
+  color: var(--backgroundColor-gray);
+  padding: .5rem .5rem;
+
+}
+.QueryButton{
+  margin-top: 1rem;
+  font-size: 1.2rem;
+  font-weight: 700;
+  padding: .5rem 2rem;
+  color: var(--font-color);
+  border-radius: .5rem;
+  background-color: var(--primay-color);
+}
+.sepration{
+  margin-top: 3rem;
+  background-color: var(--primay-color);
+  height: .02rem;
+  width: 80%;
+  display: block;
+}
+.QuerySection h5{
+  text-align: center;
+  margin-top: 2rem;
+  color: var(--gray-light);
+  font-size: .8rem;
 }

@@ -1,0 +1,31 @@
+export const feature ={
+    "featureData":{
+        "image":[
+            {
+                "image":"https://dhhu8n9celg6x.cloudfront.net/system/assets/files/10351/large/IMG_20151003_172437.jpg?1480670690",
+            },
+            {
+                "image":"https://dhhu8n9celg6x.cloudfront.net/system/assets/files/10351/large/IMG_20151003_172437.jpg?1480670690",
+            },
+            {
+                "image":"https://dhhu8n9celg6x.cloudfront.net/system/assets/files/10351/large/IMG_20151003_172437.jpg?1480670690",
+            },
+            {
+                "image":"https://dhhu8n9celg6x.cloudfront.net/system/assets/files/10351/large/IMG_20151003_172437.jpg?1480670690",
+            },
+            {
+                "image":"https://dhhu8n9celg6x.cloudfront.net/system/assets/files/10351/large/IMG_20151003_172437.jpg?1480670690",
+            },
+            {
+                "image":"https://dhhu8n9celg6x.cloudfront.net/system/assets/files/10351/large/IMG_20151003_172437.jpg?1480670690",
+            },
+            {
+                "image":"https://dhhu8n9celg6x.cloudfront.net/system/assets/files/10351/large/IMG_20151003_172437.jpg?1480670690",
+            },
+            {
+                "image":"https://dhhu8n9celg6x.cloudfront.net/system/assets/files/10351/large/IMG_20151003_172437.jpg?1480670690",
+            },
+            
+        ]
+    }
+}

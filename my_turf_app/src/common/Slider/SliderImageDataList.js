@@ -1,0 +1,34 @@
+export const heroSectionSlider ={
+      HeroSliderImage:{
+        "Images":[
+            {
+                "image":"https://img3.khelomore.com/venues/143/images/1040x490/Battlefield-Mulund-3.jpg",
+            },
+            {
+                "image":"https://content.jdmagicbox.com/comp/mumbai/q8/022pxx22.xx22.220122112735.k7q8/catalogue/offshots-mulund-mumbai-sports-clubs-8660qdqwgb.jpg?clr=",
+            },
+            {
+                "image":"https://playo.gumlet.io/ATHLONSPORTSMULUND/AthlonsportIndia10.jpg",
+            },
+            {
+                "image":"https://img3.khelomore.com/venues/143/images/1040x490/Battlefield-Mulund-3.jpg",
+            },
+            {
+                "image":"https://content.jdmagicbox.com/comp/mumbai/q8/022pxx22.xx22.220122112735.k7q8/catalogue/offshots-mulund-mumbai-sports-clubs-8660qdqwgb.jpg?clr=",
+            },
+            {
+                "image":"https://playo.gumlet.io/ATHLONSPORTSMULUND/AthlonsportIndia10.jpg",
+            },
+            {
+                "image":"https://img3.khelomore.com/venues/143/images/1040x490/Battlefield-Mulund-3.jpg",
+            },
+            {
+                "image":"https://content.jdmagicbox.com/comp/mumbai/q8/022pxx22.xx22.220122112735.k7q8/catalogue/offshots-mulund-mumbai-sports-clubs-8660qdqwgb.jpg?clr=",
+            },
+            {
+                "image":"https://playo.gumlet.io/ATHLONSPORTSMULUND/AthlonsportIndia10.jpg",
+            },
+            
+        ]
+      }
+}
