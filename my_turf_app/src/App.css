@@ -1,59 +1,70 @@
 @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200;300;400;500;600;700;800&display=swap');
-:root{
-  --body-backgroundColor:rgb(0, 0, 0);
-  --backgroundColor-gray:rgb(50, 50, 50);
-  --primay-color:#8072e6;
-  --font-color:white;
-  --blue-backgroundColor:#ccc5fe;
-  --font-color-secondary:rgb(197, 196, 196);
-  --gray-light:rgb(23, 23, 23);
+
+:root {
+  --body-backgroundColor: rgb(0, 0, 0);
+  --backgroundColor-gray: rgb(50, 50, 50);
+  --primay-color: #8072e6;
+  --font-color: white;
+  --blue-backgroundColor: #ccc5fe;
+  --font-color-secondary: rgb(197, 196, 196);
+  --gray-light: rgb(23, 23, 23);
+  --star-color: rgb(255, 170, 0);
 }
-*{
+
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   border: none;
   outline: none;
+  text-decoration: none;
   font-family: 'Plus Jakarta Sans', sans-serif;
   transition: all .2s linear;
 }
-html{
+
+html {
   overflow-x: hidden;
   scroll-behavior: smooth;
   scroll-padding-top: 7px;
 }
-body{
+
+body {
   overflow-x: hidden;
   background-color: var(--body-backgroundColor);
 }
+
 /* -------------------------------------------------------ProfileDetailSection-------------------------------------------------- */
-.ProfileDetailSection{
+.ProfileDetailSection {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 1rem 1.5rem;
 }
-.UserDetailSection h2{
+
+.UserDetailSection h2 {
   letter-spacing: .05rem;
   font-size: 1.5rem;
-  color:var(--font-color);
+  color: var(--font-color);
 }
-.UserDetailSection h2 span{
+
+.UserDetailSection h2 span {
   padding-left: .2rem;
-font-size: .9em;
+  font-size: .9em;
 }
-.UserDetailSection p{
+
+.UserDetailSection p {
   margin-top: .2rem;
   word-spacing: .3rem;
   font-size: .75rem;
   color: var(--font-color-secondary);
 }
-.UserProfileSection img{
+
+.UserProfileSection img {
   border-radius: 50%;
 }
 
 /* ----------------------------------------------------------NavbarContainer-------------------------------------------- */
-.NavbarContainer{
+.NavbarContainer {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -71,22 +82,25 @@ font-size: .9em;
 
 
 /* ---------------------------------------------------------NavbarPaticularSection--------------------------------------------- */
-.NavbarPaticularSection{
+.NavbarPaticularSection {
   display: flex;
   align-items: center;
   flex-direction: column;
 }
-.NavbarContainer:nth-child(2){
+
+.NavbarContainer:nth-child(2) {
   background-color: var(--primay-color);
   height: 4rem;
   width: 4rem;
   border-radius: 50%;
 }
-.NavbarPaticularSection .Text{
+
+.NavbarPaticularSection .Text {
   margin-top: .1rem;
   font-size: .75rem;
 }
-.navsection{
+
+.navsection {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -99,12 +113,12 @@ font-size: .9em;
 }
 
 /* -------------------------------------------------SecondSliderFeacture-------------------------------------------- */
-.InfoSliderCard img{
-  border-radius:.5rem
+.InfoSliderCard img {
+  border-radius: .5rem
 }
 
 /* -----------------------------------------------TourSection---------------------------------------- */
-.TourTextSection{
+.TourTextSection {
   color: var(--font-color);
   margin-top: 1rem;
   margin-bottom: .8rem;
@@ -112,16 +126,16 @@ font-size: .9em;
 }
 
 /* -----------------------------------------------Button--------------------------------------------- */
-.Button button{
+.Button button {
   background-color: var(--body-backgroundColor);
   color: var(--font-color);
   border-radius: 1rem;
   font-size: 1.3rem;
-    padding: 1rem .5rem;
+  padding: 1rem .5rem;
 }
 
 /* ---------------------------------------------checkOutContainer------------------------------------------------ */
-.checkOutContainer{
+.checkOutContainer {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -135,19 +149,21 @@ font-size: .9em;
   text-align: center;
   background-color: var(--backgroundColor-gray);
 }
-.checkOutContainer h3{
+
+.checkOutContainer h3 {
   padding-bottom: 1rem;
 }
 
 
 /* -------------------------------------------------------------ShowCaseSection-------------------------------------------- */
-.plateFormHeaderSection{
+.plateFormHeaderSection {
   margin-top: 2rem;
   border-top-right-radius: 1.5rem;
   border-top-left-radius: 1.5rem;
   background-color: var(--backgroundColor-gray);
   padding-bottom: 1rem;
 }
+
 .plateFormHeaderContainer {
   display: flex;
   justify-content: center;
@@ -204,15 +220,17 @@ font-size: .9em;
 }
 
 /* ---------------------------------------------------------RecommendedComponent----------------------------------- */
-.RecommendedComponent{
+.RecommendedComponent {
   margin-top: 1.5rem;
   color: var(--font-color);
 }
-.RecommendedComponent h2{
+
+.RecommendedComponent h2 {
   margin-bottom: .8rem;
   margin-left: 1rem;
 }
-.RecommendedTextSection{
+
+.RecommendedTextSection {
   position: absolute;
   top: 80%;
   color: var(--font-color);
@@ -221,7 +239,7 @@ font-size: .9em;
 }
 
 /* ---------------------------------------------------------QuerySection-------------------------------------------------- */
-.QuerySection{
+.QuerySection {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -230,13 +248,15 @@ font-size: .9em;
   color: var(--font-color);
   margin-bottom: 8rem;
 }
-.QuerySection p{
+
+.QuerySection p {
   margin-top: .5rem;
   font-size: 1rem;
   text-align: center;
   color: var(--gray-color);
 }
-.QuerySection textarea{
+
+.QuerySection textarea {
   margin-top: 1.5rem;
   background-color: transparent;
   border: 1px solid var(--primay-color);
@@ -245,7 +265,8 @@ font-size: .9em;
   padding: .5rem .5rem;
 
 }
-.QueryButton{
+
+.QueryButton {
   margin-top: 1rem;
   font-size: 1.2rem;
   font-weight: 700;
@@ -254,14 +275,16 @@ font-size: .9em;
   border-radius: .5rem;
   background-color: var(--primay-color);
 }
-.sepration{
+
+.sepration {
   margin-top: 3rem;
   background-color: var(--primay-color);
   height: .02rem;
   width: 80%;
   display: block;
 }
-.QuerySection h5{
+
+.QuerySection h5 {
   text-align: center;
   margin-top: 2rem;
   color: var(--gray-light);
@@ -270,7 +293,7 @@ font-size: .9em;
 
 
 /* ----------------------------------------------------checkOutSlot---------------------------------------------------------- */
-.checkOutSlot{
+.checkOutSlot {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -281,37 +304,42 @@ font-size: .9em;
   padding: .5rem 1rem;
   margin: 1rem .5rem;
 }
-.checkOutSlot .firstSection{
+
+.checkOutSlot .firstSection {
   display: flex;
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  padding:.5rem 1rem ;
+  padding: .5rem 1rem;
   margin-top: .1rem;
 }
-.secondSection input{
+
+.secondSection input {
   font-size: 1rem;
   width: 100%;
   color: var(--font-color);
   padding: .5rem 1rem;
-  padding-right:2rem ;
-  border-bottom-left-radius:.5rem ;
-  border-top-left-radius:.5rem ;
+  padding-right: 2rem;
+  border-bottom-left-radius: .5rem;
+  border-top-left-radius: .5rem;
   border: 2px solid var(--primay-color);
   background-color: transparent;
 }
-.secondSection{
+
+.secondSection {
   display: flex;
   margin-top: 1rem;
 }
-.checkOutButton{
+
+.checkOutButton {
   background-color: var(--primay-color);
   color: var(--font-color);
   font-size: 1rem;
   border-top-right-radius: 1.5rem;
   padding: .6rem .7rem;
 }
-.seprations{
+
+.seprations {
   margin-top: 1.5rem;
   margin-bottom: 1.5rem;
   background-color: var(--primay-color);
@@ -319,36 +347,167 @@ font-size: .9em;
   width: 80%;
   display: block;
 }
-.explore button{
+
+.explore button {
   color: var(--font-color);
   font-size: 1.1rem;
   padding: 1rem 2rem;
   border: .5rem;
   border-radius: .5rem;
-  background-color:transparent;
-  border:2px solid var(--primay-color);
+  background-color: transparent;
+  border: 2px solid var(--primay-color);
 
 }
-.checkOutSlot p{
+
+.checkOutSlot p {
   word-spacing: .2rem;
   font-size: 1rem;
 }
-.checkOutSlot h4{
+
+.checkOutSlot h4 {
   color: green;
   margin-top: .8rem;
 }
 
 /* -----------------------------------------------------------NavbarPagesContainer-------------------------------------- */
-.NavbarPagesContainer{
+.NavbarPagesContainer {
   display: flex;
   justify-content: space-between;
   align-items: center;
   width: 100%;
   color: var(--font-color);
-  padding: 1rem ;
+  padding: 1rem;
+  font-size: 1rem;
+  box-shadow: 1px 1px 1px var(--backgroundColor-gray);
 }
-.NavbarLeftSection{
+
+.NavbarLeftSection {
   display: flex;
   justify-content: flex-start;
   align-items: center;
+}
+
+.NavbarLeftSection p {
+  margin-left: 20%;
+}
+
+/* -----------------------------------------------------------BannerSection-------------------------------------------------- */
+.Banner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  margin-top: 1rem;
+  margin-left: 1.2rem;
+  margin-right: 1rem;
+  position: relative;
+  border-radius: 1.5rem;
+}
+
+.Banner img {
+  border-radius: 1.5rem;
+  width: 100%;
+}
+
+.Banner .textSection {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 90%;
+  background-color: var(--font-color);
+  width: 100%;
+  color: var(--backgroundColor-gray);
+  border-bottom-left-radius: 1.5rem;
+  border-bottom-right-radius: 1.5rem;
+}
+
+/* --------------------------------------------------------------------detailPage------------------------------------ */
+.DetailPage {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  color: var(--font-color);
+}
+
+.textSections {
+  padding: 2rem 1rem;
+}
+
+.contactDetail {
+  display: flex;
+  font-size: 1rem;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-top: 1rem;
+}
+
+.contactDetail a {
+  display: block;
+  text-align: center;
+  margin-top: 1rem;
+  color: rgb(226, 223, 223);
+}
+
+.DetailPage .star {
+  margin-top: .5rem;
+  font-size: .8rem;
+  letter-spacing: .2rem;
+  color: var(--star-color);
+}
+
+.BookSlot button {
+  background: transparent;
+  padding: .8rem 2rem;
+  width: 90%;
+  margin-left: 5%;
+  border-radius: .5rem;
+  background-color: var(--primay-color);
+  color: var(--font-color);
+}
+
+.DetailPageButtonSection {
+  position: fixed;
+  width: 100%;
+  bottom: 1rem;
+  left: 0;
+}
+
+.DetailPage .cont {
+  margin-top: 2rem;
+  margin-left: 35%;
+}
+
+.seprationss {
+  margin-left: 10%;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  background-color: var(--primay-color);
+  height: .02rem;
+  width: 80%;
+  display: block;
+}
+
+/* -------------------------------------------------------------------slotDateCard-------------------------------------- */
+.slotDateCard {
+  text-align: center;
+  padding: .5rem .7rem;
+  display: inline-block;
+  color: var(--font-color);
+  /* box-shadow: 1px 1px 1px var(--backgroundColor-gray); */
+}
+
+ .active {
+  color: var(--font-color);
+  background-color: var(--primay-color);
+}
+
+.seprationsss {
+  margin-bottom: 1.5rem;
+  background-color: var(--backgroundColor-gray);
+  height: .02rem;
+  width: 100%;
+  display: block;
 }

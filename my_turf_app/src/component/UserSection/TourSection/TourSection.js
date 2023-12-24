@@ -1,5 +1,5 @@
 import React from 'react'
-import SliderInfo from '../../common/DifferentSlider/SliderInfo'
+import SliderInfo from '../../../common/DifferentSlider/SliderInfo'
 
 export default function TourSection() {
   return (

@@ -1,13 +1,41 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+/* ----------------------------------------------------AdminPage css------------------------------------------------ */
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200;300;400;500;600;700;800&display=swap');
+
+
+:root {
+  --body-backgroundColor: rgb(0, 0, 0);
+  --backgroundColor-gray: rgb(50, 50, 50);
+  --primay-color: #8072e6;
+  --font-color: white;
+  --blue-backgroundColor: #ccc5fe;
+  --font-color-secondary: rgb(197, 196, 196);
+  --gray-light: rgb(23, 23, 23);
+  --star-color: rgb(255, 170, 0);
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: none;
+  outline: none;
+  text-decoration: none;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  color: var(--font-color);
+  transition: all .2s linear;
 }
+
+html {
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  scroll-padding-top: 7px;
+}
+
+body {
+  overflow-x: hidden;
+  background-color: var(--body-backgroundColor);
+ 
+}
+
+
+/* ------------------------------------------------AdminNavbar --------------------------------------------------------- */
