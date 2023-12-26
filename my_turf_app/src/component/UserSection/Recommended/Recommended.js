@@ -46,9 +46,9 @@ export default function Recommended() {
                 className="mySwiper"
             >
                 {
-                    dataDetail.map((data) => {
+                    dataDetail.map((data ,index) => {
                         return (
-                            <SwiperSlide style={handleStyle}>
+                            <SwiperSlide style={handleStyle} key={index}>
                                 <RecommendedCard image={data.image} place={data.place} description={data.description}/>
                             </SwiperSlide>
                         )
