@@ -9,6 +9,7 @@ import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
 import Editing from '../Different/EditindSection/Editing';
 import DashBoard from '../Different/Dashboard/DashBoard';
+import Enquire from '../Different/EnquireSection/Enquire';
 
 function TabPanel(props) {
   const { children, value, index, ...other } = props;
@@ -45,7 +46,7 @@ function a11yProps(index) {
 
 export default function FullWidthTabs() {
   const theme = useTheme();
-  const [value, setValue] = React.useState(1);
+  const [value, setValue] = React.useState(2);
 
   const handleChange = (event, newValue) => {
     setValue(newValue);
@@ -83,7 +84,7 @@ export default function FullWidthTabs() {
           <DashBoard/>
         </TabPanel>
         <TabPanel value={value} index={2} dir={theme.direction}>
-          Item Three
+          <Enquire/>
         </TabPanel>
       </SwipeableViews>
     </Box>

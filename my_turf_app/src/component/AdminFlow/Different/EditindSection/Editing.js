@@ -1,15 +1,13 @@
 import React from 'react'
+import OfferSection from './OfferSection'
 
-export default function Editing({offerImage}) {
+export default function Editing() {
     let HandleOffer= (e)=>{
    console.log("click")
     }
     return (
         <div className='Editing'>
-            <div className="OfferSection">
-              <img src={offerImage} width={200} alt='OfferSection' /> 
-               <input type='text' placeholder='Enter the link here...' name='Link' onChange={HandleOffer}/>
-            </div>
+          <OfferSection /> 
         </div>
     )
 }

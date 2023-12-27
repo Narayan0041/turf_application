@@ -148,7 +148,8 @@ body {
 .MuiPaper-root {
   background-color: var(--background-blue-color-) !important;
 }
-.css-19kzrtu{
+
+.css-19kzrtu {
   padding: 0 !important;
 }
 
@@ -164,25 +165,159 @@ body {
   background-color: var(--background-blue-color-);
 }
 
-.speedometer{
+.speedometer {
   height: 200px !important;
 }
+
 /* -------------------------------------------------------AdPoster--------------------------------------------------------------- */
-.AdPoster{
+.AdPoster {
   margin-top: 1rem;
   width: 100%;
 }
-.AdPoster img{
+
+.AdPoster img {
   height: 15vh;
   border-radius: .5rem;
   width: 100%;
 }
-.DashBoardRecommendeSection{
+
+.DashBoardRecommendeSection {
   width: 100%;
 }
-.react-swipeable-view-container div{
+
+.react-swipeable-view-container div {
   overflow-x: hidden;
 }
-.css-1ujnqem-MuiTabs-root{
+
+.css-1ujnqem-MuiTabs-root {
   background-color: var(--body-backgroundColor) !important;
+}
+
+/* -----------------------------------Editing OfferSection------------------------ */
+.OfferSection {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-top: 1rem;
+  flex-direction: column;
+}
+
+.textSection {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 1rem;
+  font-size: 1.2rem;
+  width: 100%;
+}
+
+.textSection img {
+  position: relative;
+  left: 2rem;
+}
+
+.OfferSection input {
+  width: 90%;
+  border-radius: .5rem;
+  padding: 1rem 2.5rem;
+}
+
+/* -------------------------------------------EnquireUserContainer------------------------------------ */
+.EnquirePage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  flex-direction: column;
+}
+
+.EnquirePage .heading {
+  margin-top: 1rem;
+  font-size: 1.5rem;
+}
+
+.EnquireUserContainer {
+  border-radius: 1rem;
+  margin: 1rem;
+  padding: 1rem;
+  background-color: var(--background-blue-color-);
+}
+
+.EnquireUserContainer div {
+  font-size: 1rem;
+  color: var(--primay-color);
+}
+
+.EnquireUserContainer p:nth-child(2) {
+  font-size: 1.3rem;
+}
+
+.EnquireUserContainer p:nth-child(3) {
+  font-size: 1rem;
+}
+
+.EnquireUserContainer p:nth-child(4) {
+  font-size: 1rem;
+}
+
+.EnquireUserContainer p:nth-child(5) {
+  margin-top: 1rem;
+  text-align: center;
+  color: gray;
+  font-size: 1.2rem;
+}
+
+.reply {
+  margin-top: .5rem;
+  margin-left: 65%;
+}
+
+.reply i {
+  margin-right: 1rem;
+}
+
+.replyContainer {
+  border-radius: 1rem;
+  width: 93%;
+  word-spacing: .2rem;
+  padding: 1rem;
+  margin: 1rem;
+  background-color: var(--background-blue-color-);
+}
+.replyHeaderSection{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+.replyHeaderSection i{
+  color: red;
+  font-size: 1.2rem;
+}
+.replyContainer p {
+  margin-bottom: 1rem;
+}
+.replyContainer textarea {
+  padding: .5rem 1rem;
+  font-size: 1rem;
+  color: var(--font-color);
+  border: 1px solid var(--primay-color);
+  background-color: transparent;
+  border-bottom-left-radius: 1rem;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+}
+.replyButton{
+  margin-top: 1rem;
+  margin-left: 50%;
+  background-color: transparent;
+  border-radius: .5rem;
+  border: 1px solid var(--primay-color);
+  padding: 1rem 2rem;
+  transition: .2s linear;
+}
+.replyButton:hover{
+  background-color:var(--primay-color);
+  color: var(--font-color);
 }
