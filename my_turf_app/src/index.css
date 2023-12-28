@@ -194,14 +194,16 @@ body {
 .css-1ujnqem-MuiTabs-root {
   background-color: var(--body-backgroundColor) !important;
 }
-.slick-track{
+
+.slick-track {
   overflow-y: hidden !important;
 }
 
 /* -----------------------------------Editing OfferSection------------------------ */
-.Editing{
+.Editing {
   overflow-y: hidden;
 }
+
 .OfferSection {
   display: flex;
   justify-content: center;
@@ -294,19 +296,23 @@ body {
   margin: 1rem;
   background-color: var(--background-blue-color-);
 }
-.replyHeaderSection{
+
+.replyHeaderSection {
   display: flex;
   justify-content: space-between;
   align-items: center;
   width: 100%;
 }
-.replyHeaderSection i{
+
+.replyHeaderSection i {
   color: red;
   font-size: 1.2rem;
 }
+
 .replyContainer p {
   margin-bottom: 1rem;
 }
+
 .replyContainer textarea {
   padding: .5rem 1rem;
   font-size: 1rem;
@@ -317,7 +323,8 @@ body {
   border-top-left-radius: 1rem;
   border-top-right-radius: 1rem;
 }
-.replyButton{
+
+.replyButton {
   margin-top: 1rem;
   margin-left: 50%;
   background-color: transparent;
@@ -326,29 +333,34 @@ body {
   padding: 1rem 2rem;
   transition: .2s linear;
 }
-.replyButton:hover{
-  background-color:var(--primay-color);
+
+.replyButton:hover {
+  background-color: var(--primay-color);
   color: var(--font-color);
 }
-.searchBoxContainer{
+
+.searchBoxContainer {
   display: flex;
   padding-right: 1rem;
   align-items: center;
   width: 100%;
 }
-.searchBoxContainer{
+
+.searchBoxContainer {
   position: relative;
 }
-.searchBoxContainer i{
+
+.searchBoxContainer i {
   position: absolute;
-left: 2rem;
-top: 1.8rem;
+  left: 2rem;
+  top: 1.8rem;
   z-index: 1000;
   /* top: 2rem;
   left: 2rem;
   bottom: .5rem; */
 }
-.EnquirePage input{
+
+.EnquirePage input {
   font-size: 1rem;
   border-radius: 1.5rem;
   margin-top: 1rem;
@@ -368,19 +380,160 @@ top: 1.8rem;
   height: 90px;
   position: relative;
 }
+
 .loader:before,
 .loader:after {
   content: "";
   position: absolute;
   inset: 0;
-  background: var(--primay-color);    
+  background: var(--primay-color);
   box-shadow: 0 0 0 50px;
-  clip-path: polygon(100% 0, 23% 46%, 46% 44%, 15% 69%, 38% 67%, 0 100%, 76% 57%, 53% 58%, 88% 33%, 60% 37%);;
+  clip-path: polygon(100% 0, 23% 46%, 46% 44%, 15% 69%, 38% 67%, 0 100%, 76% 57%, 53% 58%, 88% 33%, 60% 37%);
+  ;
 }
+
 .loader:after {
   animation: l8 1s infinite;
   transform: perspective(300px) translateZ(0px)
 }
+
 @keyframes l8 {
-  to {transform:perspective(300px) translateZ(180px);opacity:0}
+  to {
+    transform: perspective(300px) translateZ(180px);
+    opacity: 0
+  }
+}
+
+/* -----------------------------------------------RegisterButton---------------------------------------------------------- */
+.RegisterButton {
+  border-radius: 2rem;
+  padding: .7rem 2.5rem;
+  font-size: 1.2rem;
+  width: 35vw;
+  background-color: transparent;
+  color: var(--font-color);
+  transition: .3s linear;
+}
+
+/* --------------------------------------------LoginPage-------------------------------------------------- */
+.LoginPage {
+  background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.3)), url("https://lh3.googleusercontent.com/p/AF1QipOaaF2egrX4r7B8H6y5OGng6QEnISABTLGcbXZX=w1080-h608-p-no-v0");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 40vh;
+  width: 100%;
+}
+
+.LoginPage .loginHeaderSection {
+  padding-top: 8rem;
+}
+
+.LoginPage .loginHeaderSection h1 {
+  line-height: 1.7rem;
+  font-size: 2rem;
+  font-weight: 900;
+  color: var(--body-backgroundColor);
+}
+
+.LoginPage .loginHeaderSection h1 span {
+  display: block;
+  font-size: 2rem;
+  color: var(--body-backgroundColor);
+}
+
+.LoginPage .loginHeaderSection p {
+  margin-top: 1rem;
+  font-size: 1rem;
+  padding-left: .5rem;
+  font-weight: 900;
+  color: var(--body-backgroundColor);
+}
+
+.textSection {
+  padding-top: 2rem;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  top: 30%;
+  /* height: 60vh; */
+  border-top-right-radius: 3rem;
+  border-top-left-radius: 3rem;
+  background-color: var(--body-backgroundColor);
+}
+
+.diffrentPageOption {
+  /* position: absolute; */
+  display: flex;
+  padding: .4rem;
+  gap: .5rem;
+  justify-content: center;
+  align-items: center;
+  top: 2rem;
+  cursor: pointer;
+  border-radius: 2rem;
+  background-color: var(--gray-light);
+}
+
+.RegisterButton.active button {
+  background-color: var(--backgroundColor-gray);
+  color: white;
+  border: 2px solid var(--backgroundColor-gray);
+}
+
+
+/* -------------------------------------------------------------LoginPageSection------------------------------------------------------- */
+.inputSection {
+  width: 80%;
+}
+
+.LoginPageSection {
+  margin-top: 2rem;
+  width: 100%;
+}
+
+.NextButton button {
+  margin-left: 12%;
+  width: 80%;
+  margin-top: 2rem;
+  border-radius: 2rem;
+  padding: .5rem 4rem;
+  font-size: 1.3rem;
+  font-weight: 700;
+  background-color: var(--primay-color);
+}
+
+.NextButton button i {
+  margin-left: 1rem;
+}
+
+.inputSection p {
+  margin-left: 20%;
+  margin-top: 1rem;
+  word-spacing: .2rem;
+  font-size: 1rem;
+}
+
+.mobileNumberLogin {
+  display: flex;
+  align-items: center;
+  margin-top: 1rem;
+  margin-left: 15%;
+  width: 70%;
+  border-radius: 2rem;
+  padding: .9rem 1rem;
+  background-color: var(--gray-light);
+}
+
+.mobileNumberLogin span {
+  margin-left: 3rem;
+}
+.caption .captiontext{
+  width: 100%;
+text-align: center;
+margin-top: 1rem;
+word-spacing: .2rem;
 }

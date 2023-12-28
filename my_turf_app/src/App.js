@@ -6,10 +6,12 @@ import Admin from './Pages/Admin';
 import SlotPage from './Pages/SlotPage';
 import BookingStepsTemplat from './component/UserSection/BookingSteps/BookingStepsTemplat';
 import Booking from './Pages/Booking';
+import Login from './component/AdminFlow/Login/Login';
 function App() {
   return (
     <>
-  <Admin/>
+    <Login/>
+  {/* <Admin/> */}
     {/* <Home/> */}
     {/* <DetailPage/> */}
     {/* <SlotPage/> */}
