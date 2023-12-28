@@ -15,17 +15,17 @@ import SliderImage from './SliderImage';
 import { heroSectionSlider } from './SliderImageDataList';
 
 export default function Slider() {
-  let handleStyle={
-    // borderRadius: "1rem",
-    width: "95%",
-    height:"31vh",
-    paddingBottom:"5rem",
-    marginBottom:"25rem",
-  }
-  let image = heroSectionSlider.HeroSliderImage.Images;
+  // let handleStyle={
+  //   // borderRadius: "1rem",
+  //   // width: "95%",
+  //   // height:"31vh",
+  //   paddingBottom:"5rem",
+  //   marginBottom:"25rem",
+  // }
+  let image = heroSectionSlider;
   return (
     <>
-      <Swiper
+       <Swiper
         spaceBetween={30}
         centeredSlides={true}
         autoplay={{
@@ -39,15 +39,19 @@ export default function Slider() {
         modules={[Autoplay, Pagination, Navigation]}
         className="mySwiper"
       >
-        {
-           image.map((image) => {
-            return (
-              <SwiperSlide style={handleStyle}>
-                <SliderImage image={image.image} firstWord={image.firstWord} secondWord={image.LastWord} />
-              </SwiperSlide>
-            )
-          })
-        }
+        {heroSectionSlider.map((item, index) =>{
+        return(
+          // Use heroSectionSlider directly
+           <SwiperSlide key={index}>
+             <SliderImage
+               image={item.image}
+               firstWord={item.firstWord}
+               secondWord={item.LastWord} // Correct case 'LastWord' to 'lastWord' if needed
+             />
+           </SwiperSlide>
+        )
+        } 
+        )}
       </Swiper>
     </>
   );

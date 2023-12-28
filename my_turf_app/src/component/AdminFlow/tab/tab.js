@@ -46,7 +46,7 @@ function a11yProps(index) {
 
 export default function FullWidthTabs() {
   const theme = useTheme();
-  const [value, setValue] = React.useState(2);
+  const [value, setValue] = React.useState(1.);
 
   const handleChange = (event, newValue) => {
     setValue(newValue);

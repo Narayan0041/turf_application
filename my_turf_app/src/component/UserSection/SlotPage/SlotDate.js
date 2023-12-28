@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from 'react';
-import NavbarPagesContainer from '../../common/Navbar';
-import SlotDateCard from '../../component/SlotPage/SlotDateCard';
+import NavbarPagesContainer from '../../../common/Navbar';
+import SlotDateCard from './SlotDateCard';
 
-export default function SlotPage() {
+export default function SlotDate() {
     const [weekSchedule, setWeekSchedule] = useState([]);
 
     useEffect(() => {
@@ -11,7 +11,7 @@ export default function SlotPage() {
             const months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
 
             const schedule = [];
-            const today = new Date().getDate(); 
+            const today = new Date().getDate();
             for (let i = 0; i < 7; i++) {
                 const currentDate = new Date();
                 currentDate.setDate(currentDate.getDate() + i);
@@ -21,7 +21,7 @@ export default function SlotPage() {
                 const monthInAbbreviation = months[currentDate.getMonth()];
 
                 const formattedDate = `${dayWithLeadingZero}`;
-                const isActive = currentDate.getDate() === today;
+                const isActive = currentDate.getDate() === today; 
 
                 const scheduleItem = {
                     date: formattedDate,
@@ -41,14 +41,14 @@ export default function SlotPage() {
     return (
         <div className='SlotPage'>
             <NavbarPagesContainer />
-            <div className='seprationsss'>
+            <div className='seprationsss dateRow'>
                 {weekSchedule.map((slot, index) => (
                     <SlotDateCard
                         key={index}
                         date={slot.date}
                         day={slot.day}
                         month={slot.month}
-                        className={slot.active ? 'active' : ''} // Apply 'active' class conditionally
+                        className={slot.active ? 'active' : ''} 
                     />
                 ))}
             </div>

@@ -1,13 +1,6 @@
-export const heroSectionSlider ={
-      HeroSliderImage:{
-        "Images":[
+export const heroSectionSlider =[
             {
-                "image":"https://media.istockphoto.com/id/520999573/photo/indoor-soccer-football-field.jpg?s=612x612&w=0&k=20&c=X2PinGm51YPcqCAFCqDh7GvJxoG2WnJ19aadfRYk2dI=",
-                "firstWord":"The",
-                "LastWord":"Thane PlayGround",
-            },
-            {
-                "image":"https://ultimatefootball.co.uk/wp-content/uploads/2020/04/rev-bg-4.jpg",
+                "image":"https://staging-stc.site-ym.com/resource/resmgr/images/guidelines-sports.jpg",
                 "firstWord":"The",
                 "LastWord":"Thane PlayGround",
             },
@@ -52,7 +45,5 @@ export const heroSectionSlider ={
                 "firstWord":"The",
                 "LastWord":"Thane PlayGround",
             },
-            
-        ]
-      }
-}
+ 
+    ]

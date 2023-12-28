@@ -7,18 +7,6 @@ import RecommendedComponent from '../Recommended/RecommendedComponent'
 import CheckOut from '../CheckOut/CheckOut'
 import Query from '../Query/Query'
 import Navbar from '../Navbar/Navbar'
-// import Slider from '../../common/Slider/Slider';
-// import ProfileDetailSection from '../../component/ProfileDetailSection';
-// import SliderInfo from "../../common/DifferentSlider/SliderInfo"
-// import Navbar from '../Navbar/Navbar';
-// import TourSection from '../TourSection/TourSection';
-// import CheckOut from '../CheckOut/CheckOut';
-// import ShowCaseHeader from '../ShowCase/ShowCaseHeader';
-// import Recommended from '../Recommended/Recommended';
-// import RecommendedComponent from '../Recommended/RecommendedComponent';
-// import Query from '../Query/Query';
-// import CheckOutSlot from '../CheckOutSlot/CheckOutSlot';
-// import NavbarPagesContainer from '../../common/Navbar';
 export default function Home() {
     return (
         <div>

@@ -53,7 +53,7 @@ componentDidMount =()=>{
     };
 
     return (
-      <div>
+      <>
         <Slider className="Different" {...settings}>
           {/* Slides */}
           {
@@ -66,7 +66,7 @@ componentDidMount =()=>{
            }) 
           }
         </Slider>
-      </div>
+      </>
     );
   }
 }

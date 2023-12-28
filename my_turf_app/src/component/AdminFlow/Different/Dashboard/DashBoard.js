@@ -11,7 +11,7 @@ export default function DashBoard() {
       <BookingRecord/>
       <BookingSlotMeter/>
       <AdPoster/>
-      {/* <UserComeInDayWiseGraph/> */}
+      <UserComeInDayWiseGraph/>
       <div className='DashBoardRecommendeSection'>
       <RecommendedComponent />
       </div>
