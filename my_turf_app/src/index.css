@@ -246,6 +246,7 @@ body {
 }
 
 .EnquireUserContainer {
+  width: 90%;
   border-radius: 1rem;
   margin: 1rem;
   padding: 1rem;
@@ -270,8 +271,8 @@ body {
 }
 
 .EnquireUserContainer p:nth-child(5) {
-  margin-top: 1rem;
-  text-align: center;
+  /* margin-top: .5rem; */
+  /* text-align: center; */
   color: gray;
   font-size: 1.2rem;
 }
@@ -328,4 +329,58 @@ body {
 .replyButton:hover{
   background-color:var(--primay-color);
   color: var(--font-color);
+}
+.searchBoxContainer{
+  display: flex;
+  padding-right: 1rem;
+  align-items: center;
+  width: 100%;
+}
+.searchBoxContainer{
+  position: relative;
+}
+.searchBoxContainer i{
+  position: absolute;
+left: 2rem;
+top: 1.8rem;
+  z-index: 1000;
+  /* top: 2rem;
+  left: 2rem;
+  bottom: .5rem; */
+}
+.EnquirePage input{
+  font-size: 1rem;
+  border-radius: 1.5rem;
+  margin-top: 1rem;
+  margin-left: 1rem;
+  width: 100%;
+  align-items: center;
+  padding: .6rem 1rem .6rem 2.5rem;
+  border: 1px solid var(--primay-color);
+  background-color: transparent;
+  margin-bottom: rem;
+}
+
+/* --------------------------------------loader------------------------------------ */
+.loader {
+  margin-top: 10rem;
+  width: 65px;
+  height: 90px;
+  position: relative;
+}
+.loader:before,
+.loader:after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: var(--primay-color);    
+  box-shadow: 0 0 0 50px;
+  clip-path: polygon(100% 0, 23% 46%, 46% 44%, 15% 69%, 38% 67%, 0 100%, 76% 57%, 53% 58%, 88% 33%, 60% 37%);;
+}
+.loader:after {
+  animation: l8 1s infinite;
+  transform: perspective(300px) translateZ(0px)
+}
+@keyframes l8 {
+  to {transform:perspective(300px) translateZ(180px);opacity:0}
 }

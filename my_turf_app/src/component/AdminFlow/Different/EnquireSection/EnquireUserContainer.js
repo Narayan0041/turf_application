@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 
-export default function EnquireUserContainer({srNo, UserName ,mobileNumber ,email ,enquire}) {
+export default function EnquireUserContainer({srNo, UserName ,mobileNumber ,email ,enquire ,address}) {
   const [showReplyContainer ,setShowReplyContainer] =useState(false);
   let handleReply=()=>{
    setShowReplyContainer(!showReplyContainer)
@@ -12,7 +12,7 @@ export default function EnquireUserContainer({srNo, UserName ,mobileNumber ,emai
      <p>Name: {UserName}</p>
      <p>Mobile: {mobileNumber}</p>
      <p>Email: {email}</p>
-     <p> {enquire}</p>
+     <p>Address: {address}</p>
      <div className='reply' onClick={handleReply}><i class="fa-solid fa-reply"></i>Reply Back</div>
     </div>
      {showReplyContainer &&(
