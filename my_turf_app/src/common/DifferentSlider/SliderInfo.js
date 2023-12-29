@@ -48,6 +48,13 @@ componentDidMount =()=>{
             slidesToShow: 3,
             slidesToScroll: 1
           }
+        },
+        {
+          breakpoint: 330,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 1
+          }
         }
       ]
     };

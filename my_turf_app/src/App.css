@@ -32,15 +32,21 @@ body {
   overflow-x: hidden;
   background-color: var(--body-backgroundColor);
 }
-.heroSliderImage{
-  height: 52vh;
+
+.heroSliderImage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  flex-direction: column;
 }
-.SilderDetailSection h1{
+
+.SilderDetailSection h1 {
   word-spacing: .5rem;
 }
 
 /* -------------------------------------------------------inputBox-------------------------------------------------------- */
-.inputBox input{
+.inputBox input {
   margin-left: .5rem;
   margin-top: 1rem;
   width: 95%;
@@ -309,7 +315,7 @@ body {
 .QuerySection h5 {
   text-align: center;
   margin-top: 2rem;
-  color: var(--gray-light);
+  color: var(--font-color-secondary);
   font-size: .8rem;
 }
 
@@ -325,6 +331,7 @@ body {
   background: var(--backgroundColor-gray);
   padding: .5rem 1rem;
   margin: 1rem .5rem;
+  margin-top: 2rem
 }
 
 .checkOutSlot .firstSection {
@@ -410,7 +417,8 @@ body {
 }
 
 .NavbarLeftSection p {
-  margin-left: 20%;
+  margin-left: 10%;
+  width: 20rem;
 }
 
 /* -----------------------------------------------------------BannerSection-------------------------------------------------- */
@@ -431,17 +439,23 @@ body {
   width: 100%;
 }
 
-.Banner .textSection {
+.Banner .textSectionInBanner {
   position: absolute;
   display: flex;
   justify-content: center;
   align-items: center;
   top: 90%;
+  padding: .7rem;
+  height: 1rem;
   background-color: var(--font-color);
   width: 100%;
-  color: var(--backgroundColor-gray);
-  border-bottom-left-radius: 1.5rem;
+  border-bottom-left-radius: 2rem;
   border-bottom-right-radius: 1.5rem;
+}
+
+.Banner .textSectionInBanner p {
+  font-weight: 700;
+  color: var(--primay-color);
 }
 
 /* --------------------------------------------------------------------detailPage------------------------------------ */
@@ -473,7 +487,7 @@ body {
   color: rgb(226, 223, 223);
 }
 
-.DetailPage .star {
+.DetailPage .star i {
   margin-top: .5rem;
   font-size: .8rem;
   letter-spacing: .2rem;
@@ -519,16 +533,19 @@ body {
   padding: .5rem .77rem;
   color: var(--font-color);
 }
- .active {
+
+.active {
   color: var(--font-color);
   background-color: var(--primay-color);
 }
-.dateRow{
+
+.dateRow {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 100%;
 }
+
 .seprationssss {
   /* margin-top: 6.23rem; */
   background-color: var(--backgroundColor-gray);
@@ -536,23 +553,38 @@ body {
   width: 100%;
   display: block;
 }
+
 /* -----------------------------------------------SlotPageSection------------------------------------------------------- */
-.SlotPageSection .header{
+.SlotPageSection {
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+  flex-direction: column;
+  width: 100%;
+}
+
+.SlotPageSection .header {
   margin-top: 1rem;
   padding-left: 26%;
 }
-.SlotPageSection .header span{
+
+.SlotPageSection .header span {
   color: var(--primay-color);
 }
 
+.slotsAvb {
+  padding-bottom: 2rem;
+}
+
 /* ----------------------------------------------------PaticularTimeSlotCard-------------------------------------------------- */
-.PaticularTimeSlotCard p{
+.PaticularTimeSlotCard p {
   font-size: 1rem;
   font-weight: 900;
   padding-left: 40%;
   color: var(--body-backgroundColor);
 }
-.PaticularTimeSlotCard p:first-child{
+
+.PaticularTimeSlotCard p:first-child {
   padding-top: 6rem;
   font-size: 1.5rem;
 }
@@ -565,12 +597,14 @@ body {
   border-top-right-radius: 3rem;
   border-top-left-radius: 3rem;
   position: absolute;
-  border-width: 2px 0 0; /* 2px top border, 0 right, 0 bottom, 0 left */
+  border-width: 2px 0 0;
+  /* 2px top border, 0 right, 0 bottom, 0 left */
   border-style: solid;
-  border-color: var(--primay-color) transparent transparent; /* Top border color, transparent for right, bottom, and left */
+  border-color: var(--primay-color) transparent transparent;
+  /* Top border color, transparent for right, bottom, and left */
 }
 
-.BookingHeaderSection{
+.BookingHeaderSection {
   padding: .5rem 4rem;
   border-radius: 2rem;
   display: inline-block;
@@ -581,41 +615,57 @@ body {
   bottom: 1.5rem;
   background-color: var(--body-backgroundColor);
 }
-.BookingInfoSection{
+
+.BookingInfoSection {
   margin-top: 1.5rem;
   font-weight: 600;
   padding-left: 13%;
+  line-height: 2rem;
 }
-.BookingInfoSection p:first-child{
-font-size: 1.5rem;
-word-spacing: .2rem;
+
+.BookingInfoSection p:first-child {
+  font-size: 1.5rem;
+  word-spacing: .2rem;
 }
-.BookingInfoSection p:nth-child(2){
-  margin-top: .7rem;
-font-size: 1.1rem;
-word-spacing: .2rem;
+
+.BookingInfoSection p:nth-child(2) {
+  /* margin-top: .7rem; */
+  font-size: 1.1rem;
+  word-spacing: .2rem;
 }
-.BookingInfoSection p:nth-child(3){
-  margin-top: .7rem;
-font-size: 1.1rem;
-word-spacing: .2rem;
+
+.BookingInfoSection p:nth-child(3) {
+  /* margin-top: .7rem; */
+  font-size: 1.1rem;
+  word-spacing: .2rem;
 }
-.BookingInfoSection p:nth-child(4){
-  margin-top: .7rem;
-font-size: 1.1rem;
-word-spacing: .2rem;
+
+.BookingInfoSection p:nth-child(4) {
+  /* margin-top: .7rem; */
+  font-size: 1.1rem;
+  word-spacing: .2rem;
 }
-.BookingInfoSection p:nth-child(5){
-  margin-top: .7rem;
+
+.BookingInfoSection p:nth-child(5) {
+  /* margin-top: .7rem; */
   line-height: 1.8rem;
-font-size: 1.1rem;
-word-spacing: .2rem;
+  font-size: 1.1rem;
+  word-spacing: .2rem;
 }
-.BookingInfoSection span{
+.BookingInfoSection p:nth-child(6) {
+  /* margin-top: .7rem; */
+  line-height: 1.8rem;
+  font-size: 1
+  rem;
+  word-spacing: .2rem;
+}
+
+.BookingInfoSection span {
   font-size: 1rem;
-  color:rgb(174, 174, 174);
+  color: rgb(174, 174, 174);
 }
-.BookingTextSectionButton{
+
+.BookingTextSectionButton {
   position: fixed;
   bottom: 5%;
   left: 1%;
@@ -624,19 +674,22 @@ word-spacing: .2rem;
   align-items: center;
   width: 100%;
 }
-.UserDeatil{
+
+.UserDeatil {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 100%;
   flex-direction: column;
 }
-.UserDeatil .userDetailInput{
+
+.UserDeatil .userDetailInput {
   display: flex;
   flex-direction: column;
   width: 90%;
 }
-.PaymentMethod{
+
+.PaymentMethod {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -645,7 +698,7 @@ word-spacing: .2rem;
   padding: 0rem 1rem;
 }
 
-.PaymentBox{
+.PaymentBox {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -656,23 +709,27 @@ word-spacing: .2rem;
   padding: 1.5rem 2rem;
   background-color: var(--backgroundColor-gray);
 }
-.PaymentBox p{
+
+.PaymentBox p {
   margin-top: .7rem;
   font-weight: 800;
 }
-.differentMethod{
+
+.differentMethod {
   display: flex;
   justify-content: space-between;
   align-items: center;
   width: 100%;
 }
-.PaymentMethod .select{
+
+.PaymentMethod .select {
   font-size: 1rem;
-  color:red;
+  color: red;
   letter-spacing: .1rem;
   margin-top: 1.5rem;
 }
-.success{
+
+.success {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -680,12 +737,15 @@ word-spacing: .2rem;
   line-height: 2.5rem;
   flex-direction: column;
 }
-.success span{
+
+.success span {
   color: var(--primay-color);
   margin-left: 27%;
   display: block;
 }
+
 .success img {
-  filter: blur(0px 10px 5px green); /* Adjust the values as needed */
+  filter: blur(0px 10px 5px green);
+  /* Adjust the values as needed */
   margin-top: 1.5rem;
 }

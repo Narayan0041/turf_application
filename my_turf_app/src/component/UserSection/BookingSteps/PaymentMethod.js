@@ -6,8 +6,8 @@ export default function PaymentMethod() {
     <div className='PaymentMethod'>
       <h1>Payment Method</h1>
       <div className="differentMethod">
-      <PaymentBox paymentImage={"./image/scan.png"} text={"Using QR Code "}/>
-      <PaymentBox paymentImage={"./image/money.png"} text={"By Cash"}/>
+      <PaymentBox paymentImage={"/image/scan.png"} text={"Using QR Code "}/>
+      <PaymentBox paymentImage={"/image/money.png"} text={"By Cash"}/>
       </div>
       <p className='select'>Select AnyOne Option</p>
     </div>

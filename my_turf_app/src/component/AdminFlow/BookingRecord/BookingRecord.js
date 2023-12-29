@@ -1,5 +1,4 @@
 import React from 'react';
-import BookingShowUsingGraph from './BookingShowUsingGraph';
 
 const BookingRecord = () => {
   return (
@@ -11,7 +10,7 @@ const BookingRecord = () => {
         </div>
       </div>
       <div className="BookingNumberSection">
-        <div className="BookingNumberSectionBox">
+        <div className="BookingNumberSectionBox NoOfEnquire">
         <p>Number of Enquire ...</p>
         <p>14/<span>7</span></p>
         </div>

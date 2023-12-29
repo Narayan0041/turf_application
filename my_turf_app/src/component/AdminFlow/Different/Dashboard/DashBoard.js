@@ -7,14 +7,14 @@ import RecommendedComponent from '../../../UserSection/Recommended/RecommendedCo
 
 export default function DashBoard() {
   return (
-    <div>
-      <BookingRecord/>
-      <BookingSlotMeter/>
-      <AdPoster/>
-      <UserComeInDayWiseGraph/>
+    <>
+      <BookingRecord />
+      <BookingSlotMeter />
+      <AdPoster />
+      <UserComeInDayWiseGraph />
       <div className='DashBoardRecommendeSection'>
-      <RecommendedComponent />
+        <RecommendedComponent />
       </div>
-    </div>
+    </>
   )
 }

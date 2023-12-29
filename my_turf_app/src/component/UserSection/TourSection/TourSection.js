@@ -4,7 +4,7 @@ import SliderInfo from '../../../common/DifferentSlider/SliderInfo'
 export default function TourSection() {
   return (
     <div>
-       <h2 className="TourTextSection">Responsive Slider</h2>
+       <h2 className="TourTextSection">Tour of Turf</h2>
         <SliderInfo/>
        <div style={{marginTop:"1rem"}}>
         <SliderInfo/>

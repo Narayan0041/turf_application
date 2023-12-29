@@ -23,11 +23,6 @@ export default function LoginPage() {
             <div className='caption' style={{marginTop:'3rem'}}>
                 <h6 className='captiontext'>Reconnect with your turf wonders. Log in now to explore and enjoy</h6>
             </div>
-            {/* <p>or login with mobile number</p> */}
-            {/* <div className="mobileNumberLogin">
-                <img src='./image/phone-call.png' width={20} alt='mobilenumber' />
-                <span>Mobile no.</span>
-            </div> */}
         </div>
     )
 }

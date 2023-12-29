@@ -67,7 +67,7 @@ body {
 .SilderDetailSection {
   z-index: 1000;
   position: absolute;
-  top: 65%;
+  top: 63.5%;
   width: 100%;
   padding-top: .5rem;
   background: linear-gradient(rgba(0, 0, 0, 0.79), rgba(0, 0, 0, 0.916));
@@ -83,7 +83,7 @@ body {
   background-color: white;
 }
 .exploreTurf{
-  margin-top: .8rem;
+  margin-top: .5rem;
   background-color: rgb(51, 51, 51);
   font-size: 1rem;
   padding: .8rem 1.5rem;

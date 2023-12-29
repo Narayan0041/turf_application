@@ -6,7 +6,7 @@ import Success from './Success'
 import Buttons from '../../../common/Button/Buttons'
 import PaymentMethod from './PaymentMethod'
 
-export default function BookingStepsTemplat({ imageUrl, step, setStep }) {
+export default function BookingStepsTemplat({ imageUrl, step, setStep ,Section ,Timing }) {
   const style = {
     background: `linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3)), url(${imageUrl})`,
     backgroundSize: 'cover',
@@ -36,7 +36,7 @@ export default function BookingStepsTemplat({ imageUrl, step, setStep }) {
         </div>
         <BookingStepper step={step} />
         {
-          step === 0 ? (<BookingGroundDetailSection groundName={"Lords Turf"} mobile={9322363737} email={"yadavshiv0041@gmail.com"} address={"525P+8R, Mumbra, Thane, Maharashtra 421204"} timing={"6:00 Am to 12:00 pm"} setStep={setStep} />)
+          step === 0 ? (<BookingGroundDetailSection groundName={"Lords Turf"} mobile={9322363737} email={"yadavshiv0041@gmail.com"} address={"525P+8R, Mumbra, Thane, Maharashtra 421204"} timing={Timing} setStep={setStep} section={Section}/>)
             : step === 1 ? (<UserDetail />)
               : step === 2 ? (<PaymentMethod />)
                 : (<Success />)

@@ -1,9 +1,9 @@
 import React from 'react'
 
-export default function BookButton({Book ,text}) {
+export default function BookButton({Book ,text ,className}) {
   return (
     <div className='BookSlot'>
-      <button onClick={Book}>{text}</button>
+      <button onClick={Book} className={className}>{text}</button>
     </div>
   )
 }
