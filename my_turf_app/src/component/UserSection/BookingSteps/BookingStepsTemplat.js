@@ -21,7 +21,6 @@ export default function BookingStepsTemplat({ imageUrl, step, setStep ,Section ,
     fontWeight: '700',
     letterSpacing: '.1rem',
     borderRadius: '.5rem'
-
   }
   let HandleCont = () => {
     setStep(step + 1)
