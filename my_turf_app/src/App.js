@@ -22,7 +22,6 @@ function App() {
   },[])
   return (
     <>
-      {/* <UserApprove/> */}
       <Router>
         <Routes>
           <Route path='/turf/adminLogin' element={<Login />} />

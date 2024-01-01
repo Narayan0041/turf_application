@@ -168,7 +168,7 @@ body {
   padding-left: 3.1rem;
   height: 230px;
   overflow-y: hidden;
-  margin-left: .8rem;
+  margin-left: .5rem;
   border-radius: 1rem;
   background-color: var(--background-blue-color-);
 }
@@ -580,10 +580,12 @@ body {
   border-radius: 50%;
   background-color: var(--gray-light);
 }
-.ProfileImageSection .profileImage{
+
+.ProfileImageSection .profileImage {
   border-radius: 50%;
 }
-.ProfileImageSection i{
+
+.ProfileImageSection i {
   position: absolute;
   bottom: .5rem;
   right: .2rem;
@@ -591,22 +593,26 @@ body {
   font-size: 1.7rem;
   cursor: pointer;
 }
-.imageUrlInput{
+
+.imageUrlInput {
   width: 100%;
 }
-.imageUrlInput input{
+
+.imageUrlInput input {
   font-size: 1rem;
   padding: .5rem 1rem .5rem 3rem;
   border-radius: .5rem;
   border: 1px solid var(--primay-color);
   background-color: transparent;
 }
-.imageUrlInput img{
+
+.imageUrlInput img {
   position: relative;
-left: 2rem;
-top: 3px;
+  left: 2rem;
+  top: 3px;
 }
-.adminDetailTextSection{
+
+.adminDetailTextSection {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -616,22 +622,26 @@ top: 3px;
   line-height: 2rem;
   gap: 50px;
 }
-.adminDetailTextSection h1{
+
+.adminDetailTextSection h1 {
   margin-bottom: 1rem;
 }
-.adminDetailTextSection p{
+
+.adminDetailTextSection p {
   font-size: 1rem;
   color: var(--font-color-secondary);
 }
-.adProfile{
- background-color: var(--primay-color) !important;
-  padding: .5rem 2rem ;
+
+.adProfile {
+  background-color: var(--primay-color) !important;
+  padding: .5rem 2rem;
   font-size: 1.2rem;
   font-weight: 800;
-  border-radius:.5rem ;
+  border-radius: .5rem;
   background-color: transparent;
 }
-.adProfile:hover{
+
+.adProfile:hover {
   background-color: #4b4292 !important;
 }
 
@@ -647,38 +657,46 @@ top: 3px;
   padding: 1rem 2rem;
   border-top-right-radius: 2rem;
   border-top-left-radius: 2rem;
-  transition: .3s linear ;
+  transition: .3s linear;
   background-color: black !important;
 }
-.ProfileSection.active{
+
+.ProfileSection.active {
   bottom: 0;
 }
+
 .ProfieDetailSection {
   display: flex;
   justify-content: flex-start;
   align-items: center;
 }
-.ProfileImage{
+
+.ProfileImage {
   border-radius: 50%;
   background-color: var(--backgroundColor-gray);
 }
-.ProfileImage img{
+
+.ProfileImage img {
   border-radius: 50%;
 }
-.UserDetail{
+
+.UserDetail {
   line-height: 1.7rem;
   margin-left: 1rem;
 }
-.UserDetail .UserName{
+
+.UserDetail .UserName {
   font-size: 1.2rem;
   font-weight: 900;
 }
-.UserDetail .mobileNumber{
+
+.UserDetail .mobileNumber {
   font-size: 1.1rem;
   font-weight: 800;
   margin-left: .2rem;
 }
-.UserDetail .EditButton{
+
+.UserDetail .EditButton {
   margin-top: .7rem;
   padding: .1rem .7rem;
   padding-left: 15%;
@@ -687,35 +705,155 @@ top: 3px;
   width: 100%;
   background-color: transparent;
   border-radius: 2rem;
-  border:1px solid var(--primay-color);
+  border: 1px solid var(--primay-color);
   cursor: pointer;
 }
-.UserDetail .EditButton i{
+
+.UserDetail .EditButton i {
   margin-left: .2rem;
   margin-right: .7rem;
 }
-.seprationTwoDiv{
+
+.seprationTwoDiv {
   margin-top: 1.5rem;
   background-color: var(--primay-color);
-  height:.5px;
+  height: .5px;
   width: 90%;
   margin-left: 5%;
   margin-bottom: 2rem;
 }
-.adminImageSection{
+
+.adminImageSection {
   cursor: pointer;
 }
 
 /* ------------------------------------------------------UserApprove----------------------------------------------------------- */
-.UserApprove{
-  margin: 1rem;
-  border-radius: 2rem;
-  background-color: var(--gray-light);
+.UserApprove {
+  margin: .5rem;
+  border-radius: 1rem;
+  background-color: var(--background-blue-color-);
+  /* padding: .5rem .5rem; */
+  margin-bottom: 1.5rem;
 }
-.UserApprove .accpetAndDenySection{
+
+.UserDetailSection {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: .5rem .5rem;
+}
+
+.UserDetailSection .UserName {
+  width: 100%;
+  padding: .5rem .5rem 0rem .5rem;
+}
+
+.UserDetailSection .UserName p {
+  font-size: 1.3rem;
+  font-weight: 900;
+  margin-top: .5rem;
+  margin-left: 24%;
+}
+
+.UserDetailSection .OtherDetail {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: .5rem .5rem 0rem .5rem;
+  /* padding: .5rem .5rem; */
+}
+
+.UserDetailSection .OtherDetail p {
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.UserDetailSection .paymentSection p {
+  margin-left: 37%;
+  font-size: 1.8rem;
+  font-weight: bolder;
+  padding:.5rem .5rem 0rem .5rem;
+}
+
+.UserDetailSection .paymentSection p span {
+  font-size: .7em;
+  margin-left: .3rem;
+}
+
+.UserApprove .accpetAndDenySection {
   display: flex;
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  padding:1rem 2rem;
+  padding: 1rem 2rem 2rem ;
+}
+
+.seprationTwoDivs {
+  margin-top: 1rem;
+  background-color: var(--primay-color);
+  height: .5px;
+  width: 90%;
+  margin-left: 5%;
+  margin-bottom: 1rem;
+}
+
+.confirmationModal {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  height: 28vh;
+  width: 100%;
+}
+
+.confirmationModal p {
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+.gropButton {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem 2rem;
+}
+
+.confirmationModal button {
+  background: transparent;
+  padding: .9rem 2rem;
+  border-radius: .5rem;
+  font-size: 1rem;
+  font-weight: 800;
+  cursor: pointer;
+  letter-spacing: .08rem;
+}
+
+.confirmationModal button:first-child {
+  background-color: green;
+  border: 1px solid green;
+}
+
+.confirmationModal button:nth-child(2) {
+  border: 1px solid red;
+}
+.ResultSection{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  padding: 1.5rem;
+  gap: .5rem;
+}
+.ResultSection p:first-child{
+  font-size: 1rem;
+  font-weight: 700;
+  color: gray;
+  word-spacing: .2rem;
+}
+.ResultSection p:nth-child(2){
+  font-size: 1.5rem;
+  font-weight: bolder;
+}
+.ResultSection img{
+  margin-top: .8rem;
 }
